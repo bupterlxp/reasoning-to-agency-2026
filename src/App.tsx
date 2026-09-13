@@ -802,7 +802,7 @@ function Venue() {
         <div className="venue-card">
           <div className="venue-image">
             <img
-              src={`${import.meta.env.BASE_URL}images/hengqin-venue.webp`}
+              src="./images/hengqin-venue.webp"
               alt="Tianmu Melody Convention Exhibition Center on an island in the Tianmu River in Hengqin, Zhuhai"
               loading="lazy"
               width="1200"
