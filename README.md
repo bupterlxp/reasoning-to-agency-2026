@@ -97,6 +97,8 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/path/to/chrome npm test
 
 网站：[https://bupterlxp.github.io/reasoning-to-agency-2026/](https://bupterlxp.github.io/reasoning-to-agency-2026/)。
 
-在 **Settings → Pages → Source** 选择 **GitHub Actions**，然后运行仓库中的 **Deploy workshop website** workflow 发布。也可以将 `dist/` 内容直接上传到其他静态站点。
+Pages 使用 **GitHub Actions** 发布。推送到 `main` 分支会自动运行 **Deploy workshop website**，构建并更新网站；也可以在 Actions 页面手动运行该 workflow。构建无需个人访问令牌，使用 GitHub 自动提供的部署权限。
+
+也可以将 `dist/` 内容直接上传到其他静态站点。
 
 网站的公开地址同时用于 `src/data.ts` 中的 CFP 下载链接，以及 `index.html` 中的 canonical 和 Open Graph 元数据。
