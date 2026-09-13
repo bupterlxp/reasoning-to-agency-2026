@@ -236,7 +236,7 @@ function Hero() {
             <div>
               <MapPin size={17} />
               <span>
-                Hengqin, Zhuhai, China<small>Next to Macau · 与澳门一水之隔</small>
+                Hengqin, Zhuhai, China<small>Just across the water from Macau</small>
               </span>
             </div>
           </div>
@@ -809,9 +809,9 @@ function Venue() {
               height="800"
             />
             <div className="venue-image-caption">
-              <span>横琴</span>
+              <span>Hengqin</span>
               <span>
-                HENGQIN, ZHUHAI
+                ZHUHAI, CHINA
                 <br />A PLACE TO CONNECT.
               </span>
             </div>
