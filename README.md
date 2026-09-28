@@ -1,5 +1,7 @@
 # From Reasoning to Agency · AACL-IJCNLP 2026
 
+网站及后续维护已迁移至 [agent-aacl-workshop/agent-aacl-workshop.github.io](https://github.com/agent-aacl-workshop/agent-aacl-workshop.github.io)。本仓库保留原始网站代码，并通过 `redirect/index.html` 将旧网址跳转到新站。
+
 英文 workshop 网站：**Learning, Acting, and Adapting with Foundation Models**。
 
 森林绿与米白配色、原创 SVG 循环图、移动端导航、研究主题筛选、AoE／本地时间切换、CFP 文本下载、日历 `.ics` 下载，以及可展开的投稿 FAQ。字体和会场图片在站内提供，访问时不依赖 Google Fonts 等第三方资源。
@@ -93,12 +95,10 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/path/to/chrome npm test
 
 ## GitHub Pages
 
-仓库：[bupterlxp/reasoning-to-agency-2026](https://github.com/bupterlxp/reasoning-to-agency-2026)。
+当前维护仓库：[agent-aacl-workshop/agent-aacl-workshop.github.io](https://github.com/agent-aacl-workshop/agent-aacl-workshop.github.io)。
 
-网站：[https://bupterlxp.github.io/reasoning-to-agency-2026/](https://bupterlxp.github.io/reasoning-to-agency-2026/)。
+网站：[https://agent-aacl-workshop.github.io/](https://agent-aacl-workshop.github.io/)。
 
-Pages 使用 **GitHub Actions** 发布。推送到 `main` 分支会自动运行 **Deploy workshop website**，构建并更新网站；也可以在 Actions 页面手动运行该 workflow。构建无需个人访问令牌，使用 GitHub 自动提供的部署权限。
+旧网址 [https://bupterlxp.github.io/reasoning-to-agency-2026/](https://bupterlxp.github.io/reasoning-to-agency-2026/) 使用 **GitHub Actions** 发布 `redirect/` 中的跳转页。推送到 `main` 分支会自动运行 **Deploy workshop website**，也可手动运行。启用 JavaScript 时，跳转会保留查询参数和章节锚点；关闭 JavaScript 时，通过 HTML 刷新跳转到新站首页。
 
-也可以将 `dist/` 内容直接上传到其他静态站点。
-
-网站的公开地址同时用于 `src/data.ts` 中的 CFP 下载链接，以及 `index.html` 中的 canonical 和 Open Graph 元数据。
+网站内容请在新仓库修改；本仓库保留的原始源码不再用于线上页面。
